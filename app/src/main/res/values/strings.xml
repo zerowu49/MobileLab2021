@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UTS</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="music_player">Music Player</string>
+    <string name="profile">Profile</string>
+    <string name="durationAwal">1:22</string>
+    <string name="durationTotal">3:44</string>
+    <string name="judulMusik">Music.mp3</string>
+    <string name="nim">NIM : 00000030182</string>
+    <string name="nama">Nama : Jonathan</string>
+    <string name="kelas">Kelas : EL</string>
+    <string name="referensi">Referensi :</string>
+    <string name="youtube">Youtube : https://www.youtube.com/watch?v=3HY1BpQJ-NY\n</string>
+    <string name="website">Website : https://material.io/develop/android\n : https://github.com/hdodenhof/CircleImageView\n</string>
+    <string name="teman">Teman : Alfonso Darren Vincentio</string>
+    <string name="path">Path: </string>
+    <string name="pathToFile"> path/to/file.mp3</string>
+    <string name="loginMusicPlayer">Login\nMusic Player</string>
+</resources>
