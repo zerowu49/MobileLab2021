@@ -21,6 +21,7 @@ class LoginActivity : AppCompatActivity() {
         // checking the username and password
         if(username == "uasmobile" && password == "uasmobilegenap"){
             val submitIntent = Intent(this, ListLaguActivity::class.java)
+            submitIntent.putExtra("position","login")
             startActivity(submitIntent)
         }else{
             Toast.makeText(this, "Username and/or password is incorrect!", Toast.LENGTH_LONG).show()

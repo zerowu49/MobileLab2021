@@ -16,13 +16,6 @@ import java.io.File
 
 
 class PlayingActivity : AppCompatActivity() {
-//    var song_name: TextView? = null
-//    var artist_name:TextView? = null
-//    var duration_played:TextView? = null
-//    var duration_total:TextView? = null
-//    var nextBtn:ImageView? = null
-//    var prevBtn:ImageView? = null
-//    var seekBar: SeekBar? = null
     var position = -1
 
     companion object {
@@ -90,14 +83,8 @@ class PlayingActivity : AppCompatActivity() {
 
         if(listSongs != null){
             toggleButton.setImageResource(R.drawable.pause)
-//            uri = Uri.parse(listSongs.get(position).path)
             uri = Uri.fromFile(File(listSongs.get(position).path))
         }
-
-        Log.i("alah", uri.toString())
-        Log.i("alah", "diatas adalah path uri musicny")
-
-//        mediaPlayer = MediaPlayer.create(this, uri)
 
         if(mediaPlayer != null){
             mediaPlayer.stop()
@@ -269,15 +256,5 @@ class PlayingActivity : AppCompatActivity() {
                 }
             })
         }
-    }
-
-    fun toggleButtonFunc(view: View){
-//        when(getDrawable(toggleButton)){
-//            R.drawable.play -> toggleButton.setImageResource(R.drawable.pause)
-//            R.drawable.pause -> toggleButton.setImageResource(R.drawable.play)
-//            else -> toggleButton.setImageResource(R.drawable.pause)
-//        }
-
-//        toggleButton.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.pause))
     }
 }

@@ -50,7 +50,8 @@ class ListLaguActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.getItemId() == R.id.profilOption) {
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, ProfileActivity::class.java).putExtra("position","listlagu"))
+
         } else if (item.getItemId() == R.id.logoutOption) {
             startActivity(Intent(this, LoginActivity::class.java))
         }
@@ -58,12 +59,13 @@ class ListLaguActivity : AppCompatActivity() {
     }
 
     fun dialogSelamatDatang(){
-        MaterialAlertDialogBuilder(this)
+        if(intent.getStringExtra("position").equals("login",true)){
+            MaterialAlertDialogBuilder(this)
                 .setTitle("Selamat Datang")
                 .setMessage("Jonathan \n00000030182")
-                .setPositiveButton("OK") { dialog, i -> dialog.cancel();
-                }
+                .setPositiveButton("OK") { dialog, i -> dialog.cancel() }
                 .show()
+        }
 
     }
 

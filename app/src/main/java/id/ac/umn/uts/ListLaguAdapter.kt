@@ -20,10 +20,6 @@ class ListLaguAdapter internal constructor(context: Context, listLagu: ArrayList
         val lokasiLagu: TextView = itemView.pathLagu
         val mAdapter: ListLaguAdapter = adapter
 
-        init {
-
-        }
-
         override fun onClick(v: View) {
             mAdapter.notifyDataSetChanged()
         }
